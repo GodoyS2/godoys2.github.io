@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Gilberto Godoy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #38bdf8;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #38bdf8;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+    .btn-download {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-download:hover {
+      background-color: #0ea5e9;
+    }
+    section {
+      margin-bottom: 40px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #7dd3fc;
+      margin-bottom: 12px;
+    }
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      padding-left: 10px;
+      position: relative;
+    }
+    ul li::before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      color: #38bdf8;
+      font-size: 0.8rem;
+    }
+    .link {
+      color: #38bdf8;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .link:hover {
+      color: #0ea5e9;
+      text-decoration: underline;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+    }
+    form button {
+      background-color: #38bdf8;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background-color: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="foto_godoy_portfolio.jpg" alt="Gilberto Godoy">
+    <h1>Gilberto Silvério Godoy</h1>
+    <p>Desenvolvedor Web em Formação</p>
+    <p><a class="link" href="mailto:gilbertogodoy268@gmail.com">gilbertogodoy268@gmail.com</a> | (19) 98133-8531</p>
+    <p><a class="link" href="https://linkedin.com/in/gilbertosgodoy" target="_blank">LinkedIn</a> | <a class="link" href="https://github.com/GodoyS2" target="_blank">GitHub</a></p>
+    <a href="Curriculo_Gilberto_DEV.pdf" class="btn-download" download>📄 Baixar Currículo</a>
+  </header>
+
+  <section>
+    <h2>Sobre Mim</h2>
+    <p>Sou um desenvolvedor em formação, apaixonado por tecnologia e com sede de aprender. Tenho experiência prática com HTML, CSS, JavaScript, C# e MySQL, e estou buscando minha primeira oportunidade na área tech para crescer profissionalmente.</p>
+  </section>
+
+  <section>
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript, PHP, C#</li>
+      <li>MySQL, XAMPP</li>
+      <li>Git/GitHub, VSCode, Visual Studio</li>
+      <li>Photoshop, Canva</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projetos</h2>
+    <ul>
+      <li><strong>Portfólio Pessoal:</strong> Site responsivo usando HTML, CSS e JS. <a class="link" href="https://github.com/GodoyS2/portfolio" target="_blank">Ver no GitHub</a></li>
+      <li><strong>Sistema de Cadastro:</strong> Criado com PHP e MySQL com login e autenticação básica.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Formação</h2>
+    <ul>
+      <li><strong>Técnico em Informática</strong> – Senac (2022–2023)</li>
+      <li><strong>Ensino Médio Integral</strong> – E.E João XXIII (2019–2021)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Português: Nativo</li>
+      <li>Inglês: Intermediário</li>
+      <li>Espanhol: Básico</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <form action="https://formsubmit.co/gilbertogodoy268@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <script>
+    ScrollReveal().reveal('section', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '40px',
+      reset: true
+    });
+  </script>
+</body>
+</html>
